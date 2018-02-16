@@ -7,6 +7,21 @@ You have 3 challenges this weekend.
 Using the file "words.txt" in this repo, write a function that reads the words in words.txt and stores them as keys in a
 dictionary. It doesn’t matter what the values are. Use the 'in' operator to find if a word is in the dictionary. 
 
+Here is some example code for opening files:
+
+    #the .py file and words.txt must be in same folder
+
+    doc = open('words.txt')
+
+    #hold the individual words in a list for further use
+
+    word_list = []
+
+
+    for word in doc:
+  
+      word_list.append(word.strip())
+
 **Challenge #2**
 
 Define a function which can print a dictionary where the keys are numbers between 1 and 3 (both included) and the values are square of keys.
