@@ -19,8 +19,8 @@ for i in word_list: #for loop to iterate line-by-line through the list
     d[i] = i # To add items to the dictionary, you can use square brackets.
 print(d)
 
-inp = (input("Enter the word to search in dictionary: "))
-if inp in d.keys():
-    print("Word found:", inp)
+inp = (input("Enter the word to search in dictionary: ")) #taking user input to check word in dictionary
+if inp in d.keys(): #checking the word in dictionary
+    print("Word found:", inp) #printing the word if found
 else:
-    print("Word not found!")
+    print("Word not found!") #printing message if the word is not found

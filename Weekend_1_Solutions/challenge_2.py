@@ -8,4 +8,4 @@ def create_dict(): #function to create our dictionary
         d = dict() #creating empty dictionary
         d[i] = i**2 #adding iterated keys and the squared values to the dictionary
         print (d) #printing dicionary
-create_dict()
+create_dict() #calling function
