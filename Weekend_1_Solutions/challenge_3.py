@@ -23,4 +23,4 @@ while True: #while loop to take continous input
     l.append(t) #appending tuples to list
     l = sorted(l) #sorting the tuples
     
-print(l)
+print(l) #printing the output
