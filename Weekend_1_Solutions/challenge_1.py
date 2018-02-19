@@ -11,10 +11,16 @@ doc = open('words.txt') #Opening the file
 word_list = [] #Creating an empty list
 
 for word in doc: #for loop to iterate through lines in the file
-    word = word.strip() #stripping off white spaces
+    word = word.strip('\n') #stripping off white spaces
     word_list.append(word) #appending the words into our list
-    d = {} # The curly brackets, {}, represent an empty dictionary.
-    for line in word_list: #for loop to iterate line-by-line through the list
-        d[line] = line # To add items to the dictionary, you can use square brackets.
+    
+d = {} # The curly brackets, {}, represent an empty dictionary.
+for i in word_list: #for loop to iterate line-by-line through the list
+    d[i] = i # To add items to the dictionary, you can use square brackets.
+print(d)
 
-print (d) #printing the output
+inp = (input("Enter the word to search in dictionary: "))
+if inp in d.keys():
+    print("Word found:", inp)
+else:
+    print("Word not found!")

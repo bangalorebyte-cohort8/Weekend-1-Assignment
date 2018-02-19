@@ -7,17 +7,20 @@ The sort criteria is:
 
 The priority is that name > age > score."""
 
-l = list()
+l = list() #creating empty list
 
-while True:
+while True: #while loop to take continous input
 
     inp = input('>')
-    if not inp :
+    if not inp : #if no input then break
         break
-    inp = inp.replace(' ', '')
-    inp = inp.split(',')
-    t = tuple(inp)
-    l.append(t)
-    l = sorted(l)
+    inp = inp.replace(' ', '') #replacing white spaces
+    inp = inp.split(',') #spliting the input
+    #print(inp) # After spliting we get list
+    inp[1] = int(inp[1]) #converting the string to int on index 1
+    inp[2] = int(inp[2]) #converting the string to int on index 2
+    t = tuple(inp) #storing the values in tuple
+    l.append(t) #appending tuples to list
+    l = sorted(l) #sorting the tuples
     
 print(l)
